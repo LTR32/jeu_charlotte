@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container-main">
+    <div class="container" id="container">
+      <div id="header" class="header">
+        <div class="header_main">
+          <h1 class="header_title">English game</h1>
+          <span class="custom-dropdown">
+            <select name="form" onchange="location=this.value;">
+              <option>Choisissez un sujet</option>
+              <option value="index2.html">Grammaire</option>
+              <option>Orthographe</option>  
+              <option>Vocabulaire</option>
+              <option>Conjugaison</option>
+            </select>
+          </span>
+        </div>
+          <p>You can now play this game! The rules are simple :</p>
+          <ul>
+            <li>Select the topic you want to work on.</li>
+            <li>Answer the questions correctly and you will advance in your quest.</li>
+            <li>Answer a question incorrectly and you will fail in your quest.</li>
+          </ul>
+      </div>
+      <div id="question-container" class="hide">
+        <div style="display: flex;" id="score-container">Score : <p style="margin:0" id="score">&thinsp;0</p></div>
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn btn-answer">Answer 1</button>
+          <button class="btn btn-answer">Answer 2</button>
+          <button class="btn btn-answer">Answer 3</button>
+          <button class="btn btn-answer">Answer 4</button>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="start-btn" class="start-btn btn">Start</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+      </div>
+      <div id="video_container_entree_main" class="video_container_entree_main">
+        <video id="video_entree" class="video_container_entree" autoplay muted>
+          <source src="entrée.mp4" type="video/mp4">
+          Désolé, votre navigateur ne prends pas en charge cette vidéo.
+        </video>
+      </div>
+      <div id="video_container" class="video_container hide">
+        <video id="video" class="video_container_main">
+          <source src="video.mp4" type="video/mp4">
+          Désolé, votre navigateur ne prends pas en charge cette vidéo.
+        </video>
+      </div>
+    </div>
+  </div>
+      <div class="return-menu hide" id="return-menu">
+        <a href="#" class="return-menu-text">Return to main menu</a>
+      </div>
+</body>
+</html>
